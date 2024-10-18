@@ -131,8 +131,8 @@ async def set_calories(message, state):
 
 
 @dp.message_handler(text=['start'])
-async def start_message(messeage):
-    await messeage.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup=kb1)
+async def start_message(message):
+    await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup=kb1)
 
 
 @dp.message_handler()
